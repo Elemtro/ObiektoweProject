@@ -17,9 +17,10 @@ using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace ObiektoweProject
-{
+{ 
     public partial class Form6 : Form
     {
+        // Ta forma pobiera dane z bazy danych i wyświetla ich na ekran
         private const string db_name = "ObiektoweProject";
         private string table_name = "";
         private string login = "";
@@ -210,6 +211,11 @@ namespace ObiektoweProject
             Form1 form = new Form1();
             form.Visible = true;
             this.Visible = false;
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

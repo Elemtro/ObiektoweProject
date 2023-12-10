@@ -1,0 +1,32 @@
+CREATE TABLE pr_etatowy
+(
+	login VARCHAR(20) PRIMARY KEY UNIQUE,
+	password VARCHAR(20),
+	imie VARCHAR(20),
+	nazwisko VARCHAR(20),
+	pesel BIGINT,
+	pensja_godzina VARCHAR(10),
+	stanowisko VARCHAR(20)
+);
+
+CREATE TABLE pr_staly
+(
+	login VARCHAR(20) PRIMARY KEY UNIQUE,
+	password VARCHAR(20),
+	imie VARCHAR(20),
+	nazwisko VARCHAR(20),
+	pesel BIGINT,
+	pensja_miesiac INTEGER,
+	stanowisko VARCHAR(20)
+);
+
+CREATE TABLE uczen
+(
+	login VARCHAR(20) PRIMARY KEY UNIQUE,
+	password VARCHAR(20),
+	imie VARCHAR(20),
+	nazwisko VARCHAR(20),
+	pesel BIGINT,
+	srednia NUMERIC,
+	stanowisko VARCHAR(20)
+);

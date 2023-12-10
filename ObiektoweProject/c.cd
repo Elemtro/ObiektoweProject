@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ObiektoweProject.Classes_Pracownik_etatowy.Hydraulik" Collapsed="true">
+    <Position X="11.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAEAAAEIAAAAAAAgAAAAIAAAAAAAACAAAQAAAAAAA=</HashCode>
+      <FileName>Classes_Pracownik_etatowy\Hydraulik.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ObiektoweProject.Classes_Pracownik_etatowy.Kierowca" Collapsed="true">
+    <Position X="11" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAEIAAAAAAAgAAAAIAAAAAAAACAAAQAAAAAAA=</HashCode>
+      <FileName>Classes_Pracownik_etatowy\Kierowca.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ObiektoweProject.Classes_Pracownik_etatowy.Sprzataczka" Collapsed="true">
+    <Position X="10" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAEIAAAAAAAgAAAAIAAAABAAACAAAQAAAAAAA=</HashCode>
+      <FileName>Classes_Pracownik_etatowy\Sprzataczka.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ObiektoweProject.Classes_Pracownik.Kierownik" Collapsed="true">
+    <Position X="14.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIABAAAAEIAAAAAAAAAAAAIAACAAAAACgAAQAAAAAAA=</HashCode>
+      <FileName>Classes_Pracownik_staly\Kierownik.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ObiektoweProject.Classes_Pracownik.Ksiegowy" Collapsed="true">
+    <Position X="14.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIABAAAAEIAAAAAAAAAAAAYAAAAAAAACgAAQAAAAAAA=</HashCode>
+      <FileName>Classes_Pracownik_staly\Ksiegowy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ObiektoweProject.Classes_Pracownik.Lekarz" Collapsed="true">
+    <Position X="16.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIABAAAAEIAAAAAAAAAAAAIAAQAAAAACgAAQAAAAAAA=</HashCode>
+      <FileName>Classes_Pracownik_staly\Lekarz.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ObiektoweProject.Classes_Pracownik.Nauczyciel" Collapsed="true">
+    <Position X="16.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIABAAAAEIAAAAAAAAAAAAIAAAAAAAACgAAQAAQAAAA=</HashCode>
+      <FileName>Classes_Pracownik_staly\Nauczyciel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ObiektoweProject.Classes_Uczen.Uczen_podstaw">
+    <Position X="7.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIQBAAAAEIAAAAAAAAAAAAIAAAAAAAACAAAQAAAAAAA=</HashCode>
+      <FileName>Classes_Uczen\Uczen_podstaw.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ObiektoweProject.Classes_Uczen.Uczen_sredn">
+    <Position X="5.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIRBAAAAEIAAAAAAAAAAAAIAAAAAAAACAAAQAAAAAAA=</HashCode>
+      <FileName>Classes_Uczen\Uczen_sredn.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="ObiektoweProject.Interfaces_Pracownik.IPr_Etatowy" Collapsed="true">
+    <Position X="11" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces_Pracownik\IPr_Etatowy.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ObiektoweProject.Interfaces_Pracownik.IPr_Staly" Collapsed="true">
+    <Position X="15" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces_Pracownik\IPr_Staly.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ObiektoweProject.Interfaces_Pracownik.IPracownik">
+    <Position X="12.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAEIAAAAAAAAAAAAIAAAAAAAACAAAQAAAAAAA=</HashCode>
+      <FileName>Interfaces_Pracownik\IPracownik.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ObiektoweProject.Interfaces_Uczen.IUczen">
+    <Position X="6.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIQBAAAAEIAAAAAAAAAAAAIAAAAAAAACAAAQAAAAAAA=</HashCode>
+      <FileName>Interfaces_Uczen\IUczen.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -18,24 +18,35 @@ namespace ObiektoweProject
 {
     public partial class Form5 : Form
     {
+        // Here we have some essential strings and objects to store our data
         private const string db_name = "ObiektoweProject";
         private string table_name = "";
 
         IUczen? uczen = null;
 
+        // This array and bool var I use for preventing
+        // user entering wrong data into the database
         int[] all_data = { 0, 0, 0, 0, 0, 0 };
         bool unique = false;
+
+        // I decided to make 2 different forms
+        // One for Pracownik class hierarchy and another for Uczen class hierarchy
+        // This one for Uczen
         public Form5(string tb_name)
         {
             table_name = tb_name;
             InitializeComponent();
         }
 
+        // This method clears all the programm's processes after exiting
         private void Form5_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
         }
 
+        // I made every text box invisible to prevent user from entering wrong data
+        // in database. So here user choses which type of 
+        // uczen he will be. And right after that all text boxex become visible
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
             switch (comboBox2.Text)
@@ -74,6 +85,9 @@ namespace ObiektoweProject
                     break;
             }
         }
+
+        // Login column in my database is primary key, so I check if login is unique,
+        // and if its not - you can't save your data until you enter unique login
         private async void textBox1_TextChanged(object sender, EventArgs e)
         {
             all_data[0] = textBox1.Text.Length;
@@ -115,6 +129,7 @@ namespace ObiektoweProject
             conn.Close();
         }
 
+        // User enters his name and programm checks if this field is not empty
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
             all_data[4] = textBox4.Text.Length;
@@ -136,6 +151,7 @@ namespace ObiektoweProject
             uczen.Imie = textBox4.Text;
         }
 
+        // User enters Password and programm checks if this field is not empty
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
             all_data[1] = textBox2.Text.Length;
@@ -157,6 +173,7 @@ namespace ObiektoweProject
             uczen.Password = textBox2.Text;
         }
 
+        // User enters his last name and programm checks if this field is not empty
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
             all_data[2] = textBox3.Text.Length;
@@ -177,7 +194,7 @@ namespace ObiektoweProject
 
             uczen.Nazwisko = textBox3.Text;
         }
-
+        // User enters his Pesel and programm checks if this field is not empty
         private void textBox5_TextChanged(object sender, EventArgs e)
         {
             all_data[3] = textBox5.Text.Length;
@@ -201,6 +218,8 @@ namespace ObiektoweProject
                 uczen.Pesel = long.Parse(textBox5.Text);
             }
         }
+
+        // I prevent user from entering wrong data into PESEL text box
         private void textBox5_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
@@ -210,6 +229,7 @@ namespace ObiektoweProject
             textBox5.MaxLength = 11;
         }
 
+        // User enters his srednia and programm checks if this field is not empty
         private void textBox6_TextChanged(object sender, EventArgs e)
         {
             if (!unique)
@@ -243,7 +263,8 @@ namespace ObiektoweProject
                 uczen.Srednia = double.Parse(edit);
             }
         }
-
+        // This method connects programm to database and then saves all data
+        // in it. Also it shows new form 7
         private async void button1_Click(object sender, EventArgs e)
         {
             var connectionString = $"Host=localhost;Username=postgres;Password=2004;Database={db_name}";
@@ -275,7 +296,7 @@ namespace ObiektoweProject
             form7.Visible = true;
             this.Visible = false;
         }
-
+        // I prevent user from entering wrong data into srednia text box
         private void textBox6_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && !(e.KeyChar == '.'))

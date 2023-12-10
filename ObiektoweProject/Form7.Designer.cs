@@ -37,18 +37,20 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Calibri", 28F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(26, 116);
+            label3.Location = new Point(21, 93);
+            label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
-            label3.Size = new Size(860, 68);
+            label3.Size = new Size(722, 58);
             label3.TabIndex = 6;
             label3.Text = "Nowy użytkownik został stworzony!";
             // 
             // button2
             // 
             button2.Font = new Font("Calibri", 24F, FontStyle.Regular, GraphicsUnit.Point);
-            button2.Location = new Point(503, 250);
+            button2.Location = new Point(402, 200);
+            button2.Margin = new Padding(2, 2, 2, 2);
             button2.Name = "button2";
-            button2.Size = new Size(383, 229);
+            button2.Size = new Size(306, 183);
             button2.TabIndex = 9;
             button2.Text = "Załogować się";
             button2.UseVisualStyleBackColor = true;
@@ -57,9 +59,10 @@
             // button1
             // 
             button1.Font = new Font("Calibri", 24F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.Location = new Point(26, 250);
+            button1.Location = new Point(21, 200);
+            button1.Margin = new Padding(2, 2, 2, 2);
             button1.Name = "button1";
-            button1.Size = new Size(383, 229);
+            button1.Size = new Size(306, 183);
             button1.TabIndex = 8;
             button1.Text = "Wyjść z programu";
             button1.UseVisualStyleBackColor = true;
@@ -67,12 +70,13 @@
             // 
             // Form7
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(908, 627);
+            ClientSize = new Size(745, 502);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(label3);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "Form7";
             Text = "Form7";
             FormClosing += Form7_FormClosing;

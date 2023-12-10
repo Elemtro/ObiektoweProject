@@ -17,6 +17,9 @@ namespace ObiektoweProject.Classes_Pracownik
         public long Pesel { get; set; }
         public string Stanowisko { get; set; }
         public void Kierowac() { }
-        public void Wakacje() { }
+        public void Wakacje() 
+        {
+            Console.WriteLine("Wakacje trwaja 20 dni");
+        }
     }
 }

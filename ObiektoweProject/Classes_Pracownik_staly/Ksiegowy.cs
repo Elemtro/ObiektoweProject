@@ -19,6 +19,9 @@ namespace ObiektoweProject.Classes_Pracownik
 
         public void Obliczac_wynagrodzenia() { }
 
-        public void Wakacje() { }
+        public void Wakacje() 
+        {
+            Console.WriteLine("Wakacje trwaja 10 dni");
+        }
     }
 }
